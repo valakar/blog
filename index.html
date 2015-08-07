@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+  <script type="text/javascript" src="scripts/scripts.js"></script>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="inner-nav container">
+      <a href="#" class="logo-nav">
+        <div class="logo"></div>
+      </a>
+
+      <div class="login-nav">
+        <a href="#login" class="btn">Log In</a>
+        <a href="#signup" class="btn">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Supports only Chrome and Firefox -->
+  <main class="main-container">
+    <div class="container padding-sm">
+      <div class="blog-container">
+        <h1>Hello and welcome to my blog! my name is jon Doe!</h1>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Modal for sign up -->
+  <div id="signup" class="modalDialog">
+    <a href="#close" title="Close" class="close">X</a>
+
+    <div id="main-container">
+      <div id="sign-up">
+        <form action="#">
+          <filedset>
+            <legend><h1>SIGN UP</h1></legend>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email"placeholder="Email" required>
+            <input type="password" id="password" name="password"placeholder="Password" required>
+            <button id="submit-btn">SIGN UP</button>
+            <hr>
+            <a href="#login">I Already have an account</a>
+          </filedset>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Modal for login  -->
+  <div id="login" class="modalDialog">
+    <a href="#close" title="Close" class="close">X</a>
+
+    <div id="main-container">
+      <div id="sign-up">
+        <form action="#">
+          <filedset>
+            <legend><h1>LOG IN</h1></legend>
+            <input type="email" id="email" name="email"placeholder="Email" required>
+            <input type="password" id="password" name="password"placeholder="Password" required>
+            <button id="submit-btn">LOG IN</button>
+            <hr>
+            <a href="#resetPass">Reset my password</a>
+            <a href="#signup">I want to create new account</a>
+          </filedset> 
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for reset password -->
+  <div id="resetPass" class="modalDialog">
+    <a href="#close" title="Close" class="close">X</a>
+      <div id="main-container">
+        <div id="sign-up">
+          <form action="#">
+            <filedset>
+              <legend><h1>RESET</h1></legend>
+              <input type="email" id="email" name="email"placeholder="Email" required>
+              <button id="submit-btn">GET NEW PASSWORD</button>
+              <hr>
+              <a href="#login">Log in</a>
+              <a href="#signup">I want to create new account</a>
+            </filedset>
+          </form>
+        </div>
+      </div>
+  </div>
+  
+</body>
+</html>

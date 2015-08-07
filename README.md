@@ -1,0 +1,1 @@
+Blog with login(sign up) pages on plain HTML and CSS
