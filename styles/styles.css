@@ -13,13 +13,11 @@ body {
 
 a {
   text-decoration: none;
-/*  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  transition: all .3s ease-out;*/
+  
 }
+
 a:hover {
+
 }
 
 .container {
@@ -33,7 +31,19 @@ a:hover {
   margin: 6px;
   box-shadow: 0 0 0 1px #b6b6b6,0 1px 3px rgba(0,0,0,.3);
   color: inherit;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
 
+.btn:hover {
+  -webkit-filter: brightness(0.2);
+  filter: brightness(0.2);
+  -moz-filter: brightness(0.2);
+  -ms-filter: brightness(0.2);
+  -o-filter: brightness(0.2);
 }
 
 .padding-sm {
@@ -126,17 +136,7 @@ a:hover {
     opacity:1;
     pointer-events: auto;
 }
-/*.modalDialog > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
-}*/
+
 .modalDialog .close {
   position: fixed;
   right: 0;
@@ -249,6 +249,19 @@ a:hover {
   padding: 15px 10px;
   display: block;
   border: 1px solid;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.modalDialog #sign-up form a:hover {
+  -webkit-filter: brightness(0.2);
+  filter: brightness(0.2);
+  -moz-filter: brightness(0.2);
+  -ms-filter: brightness(0.2);
+  -o-filter: brightness(0.2);
 }
 
 /**
